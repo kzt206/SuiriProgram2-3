@@ -4,7 +4,7 @@ const yMax = 50
 const yMin = 0;
 
 const padding = 100;
-const graphWidth = 1000;
+const graphWidth = 1200;
 const w = padding + graphWidth + padding;
 const h = padding + graphWidth*1.25 + padding;
 

@@ -10,50 +10,22 @@
     <link rel="stylesheet"
         href="css/style.css"
         type="text/css">
-        
-    <style>
-        .axis path {
-            fill: none;
-            stroke: black;
-            stroke-width: 2px;
-            shape-rendering: crispEdges;
-        }
-
-        .axis line {
-            fill: none;
-            stroke: lightgray;
-            stroke-width: 0.5px;
-            shape-rendering: crispEdges;
-        }
-
-        .axis text {
-            font-family: sans-serif;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        button{
-            width: 250px;
-        }
-
-        svg{
-            /* width:  1200px;
-            height: 1450px; */
-            border:  solid 1px green;
-        }
-    </style>
 </head>
 
 <body>
     <script src="http://d3js.org/d3.v5.min.js"></script>
 
-    <button style="display:inline;margin-bottom:16px;" id="ZBGraph">show ZB</button>
-    <button style="display:inline;margin-bottom:16px;" id="IPGraph">show IP</button>
-    <button style="display:inline;margin-bottom:16px;" id="MRGraph">show MR</button>
-    <svg id="Graph"></svg>
-    <script src="ZB_IP.js"></script>
+    <div class="selectButton">
+        <button id="ZBGraph">show ZB</button>
+        <button id="IPGraph">show IP</button>
+        <button id="MRGraph">show MR</button>
+    </div>
 
-  
+    <div class="svgSpace">
+        <svg id="Graph"></svg>
+        <script src="ZB_IP.js"></script>
+    </div>
+
 </body>
 
 </html>
